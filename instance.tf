@@ -2,7 +2,7 @@ resource "aws_instance" "example" {
   ami           = var.AMIS[var.AWS_REGION]
   instance_type = "t2.micro"
   tags = { 
-    Name = "EC2-terraform-xxxx"
+    Name = "terraform-xxxx-EC2"
   }
 
   # the VPC subnet

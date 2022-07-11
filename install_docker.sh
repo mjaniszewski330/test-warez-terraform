@@ -3,6 +3,7 @@
 sudo yum update -y
 sudo yum install git -y
 sudo yum install docker -y
+service docker start
 
 git clone -b 0.56.0 https://github.com/saucelabs/the-internet.git
 cd the-internet

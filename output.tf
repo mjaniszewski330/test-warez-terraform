@@ -1,8 +1,8 @@
-output "Public_IP_address_of_aws_instance_is" {
+output "Public-IP-address-of-aws-instance-is" {
   value = "${aws_instance.example.*.public_ip}"
 }
 
-output "Private_IP_address_of_aws_instance_is" {
+output "Private-IP-address-of-aws-instance-is" {
   value = "${aws_instance.example.*.private_ip}"
 }
 
