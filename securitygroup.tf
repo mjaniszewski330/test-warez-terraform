@@ -1,14 +1,16 @@
-resource "aws_security_group" "allow-ssh-terraform-mnjk" {
+resource "aws_security_group" "allow-ssh-terraform-xxxx" {
   vpc_id      = aws_vpc.main.id
-  name        = "allow-ssh-terraform-mnjk"
-  description = "security group that allows ssh and all egress traffic"
+  name        = "allow-ssh-terraform-xxxx"
+  description = "security group defines security rules for ingress & egress traffic"
+  
+  #outcoming traffic
   egress {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
-
+  #incoming traffic
   ingress {
     from_port   = 22
     to_port     = 22
@@ -24,7 +26,7 @@ resource "aws_security_group" "allow-ssh-terraform-mnjk" {
   }
 
   tags = {
-    Name = "allow-ssh-terraform-mnjk"
+    Name = "allow-ssh-terraform-xxxx"
   }
 }
 
