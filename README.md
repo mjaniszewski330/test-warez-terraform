@@ -11,9 +11,9 @@
 8. check terraform version `terraform --version`. If provided you install terraform correctly. Gratulation!
 
 ## how to create infrastrucutre
-1. clone reposiotry from `https://github.com/mjaniszewski330/test-warez-terraform`
-2. go into recently pulled repo `cd test-warez-terrafrom`
-3. checkout for your branch `git checkout my-branch-name`
+1. clone reposiotry `git clone https://github.com/mjaniszewski330/test-warez-terraform`
+2. go into recently pulled repo `cd test-warez-terraform`
+3. checkout for your branch `git checkout -b my-branch-name`
 4. modify terraform code to preapre your own configuration
 5. add access secret key pair
 6. initialize terraform providers `terraform init`
