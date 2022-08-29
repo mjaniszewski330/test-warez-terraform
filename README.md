@@ -11,6 +11,7 @@
 8. check terraform version `terraform --version`. If provided you install terraform correctly. Gratulation!
 
 ## how to create infrastrucutre
+0. create a directory `mkdir src` 
 1. clone reposiotry `git clone https://github.com/mjaniszewski330/test-warez-terraform`
 2. go into recently pulled repo `cd test-warez-terraform`
 3. checkout for your branch `git checkout -b my-branch-name`
